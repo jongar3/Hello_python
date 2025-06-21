@@ -37,3 +37,16 @@ print([1,2] in matriz)
 print(matriz[0][1])
 
 print(len(matriz))
+
+#dictionaries dictionary={key: value}
+
+programming_dictinary= {
+"Bug": "An error in the program",
+"Function": "A piece of code that can easily be calle",
+}
+print(programming_dictinary["Bug"])
+    #Adding another element
+programming_dictinary["Loop"]= "Doing something over and over again"
+print(programming_dictinary)
+for thing in programming_dictinary:
+    print(thing) #thing= key
