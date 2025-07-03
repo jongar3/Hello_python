@@ -40,6 +40,6 @@ while option!= "off":
             if introduced_value >= drinks[option]["cost"]*100:
                 refund=-(drinks[option]["cost"]*100 - introduced_value)
                 serve_drink(option, resources)
-                print(f"Your refund: {refund/100}€")
+                print(f"Your refund: {round(refund/100, 2):.2f}€")
             else:
                 print("Not enough money! Refund")
