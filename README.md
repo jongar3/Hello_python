@@ -11,14 +11,21 @@ _https://www.udemy.com/course/100-days-of-code/?couponCode=PMNVD2025_
 COMANDOS UTILES
 
 *Instalar todas las librerías externas
+
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install -r requirements.txt
 
 FLUJO TIPICO
 
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install prettytable
+
 pip freeze > requirements.txt
+
 echo "venv/" >> .gitignore
