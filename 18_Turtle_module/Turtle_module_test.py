@@ -3,11 +3,12 @@ from turtle import *
 import heroes as h
 from random import randint
 print(h.gen())
+timmy_the_turtle=Turtle()
 def square(turtle, size):
     for i in range(0, 4):
         turtle.forward(size)
         turtle.left(90)
-def dash_line(turtle, number):
+def dash_line(turtle =timmy_the_turtle, number=5):
     for i in range(0, number):
         turtle.forward(20)
         turtle.up()
@@ -38,7 +39,7 @@ def spirograph(turtle, number):
         turtle.right(360/number)
     tracer(1)
 
-timmy_the_turtle=Turtle()
+
 
 timmy_the_turtle.shape("turtle")
 timmy_the_turtle.color("PaleVioletRed2")
@@ -48,7 +49,11 @@ timmy_the_turtle.color("PaleVioletRed2")
 #dash_line(timmy_the_turtle, 6)
 #draw_figures(timmy_the_turtle, 100)
 #random_walk(timmy_the_turtle, 100)
-spirograph(timmy_the_turtle, 50)
+#spirograph(timmy_the_turtle, 50)
+
 
 screen = Screen()
+screen.listen()
+screen.onkey(key= "space", fun= dash_line)
+
 screen.exitonclick()
