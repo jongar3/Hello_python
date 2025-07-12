@@ -18,6 +18,6 @@ with open(BASE_DIR / "Input" / "Letters" / "starting_letter.txt", mode= "r") as 
 
 for name in names:
     with open(BASE_DIR / "Output" / "ReadyToSend" / f"letter_for_{name}.txt", mode= "w") as f:
-        letters[0]= f"Dear {name}"
+        letters[0]= f"Dear {name}."
         to_write = "\n".join(letters)
         f.write(str(to_write))
