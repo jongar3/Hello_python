@@ -2,9 +2,9 @@ from turtle import Turtle
 import random
 import os
 import subprocess
-
-
-
+import pathlib
+PATH= pathlib.Path.cwd() / "highscore.txt"
+PATH_VIDEO= pathlib.Path(__file__).resolve().parent.parent / "venv" / "bin" / "bad-apple-turtle"
 class Snake:
     def __init__(self):
         self.parts= 3
@@ -66,11 +66,11 @@ class Snake:
 
 
 class Food(Turtle):
-    def __init__(self, snake):
+    def __init__(self, snake, color):
         super().__init__()
         self.snake=snake #SAME OBJECT self.snake is snake = True
         self.shape("square")
-        self.color("red")
+        self.color(str(color))
         self.penup()
         self.__move_position()
 
@@ -98,20 +98,34 @@ class ScoreBoard(Turtle):
         self.goto(0,270)
         self.hideturtle()
         self.color("White")
-        self.write(f"Score: {self.score}", align="center", font=("Arial", 30, "normal"))
+        if PATH.exists():
+            with open(PATH, "r") as file:
+                self.highscore= int(file.read())
+            self.write(f"Score: {self.score}, Highscore: {self.highscore}", align="center",font=("Arial", 30, "normal"))
+        else:
+            self.write(f"Score: {self.score}", align="center", font=("Arial", 30, "normal"))
+            self.highscore=0
 
     def upload_score(self):
-        self.write(f"Score: {self.score}", align="center", font=("Arial", 30, "normal"))
+        self.write(f"Score: {self.score}, Highscore: {self.highscore}", align="center", font=("Arial", 30, "normal"))
     def increase_score(self):
         self.score += 1
         self.clear()
         self.upload_score()
+    def game_over(self):
+        self.goto(0,0)
+        self.write("GAME OVER", align="center", font=("Arial", 30, "normal"))
+        if self.highscore<self.score:
+            with open(PATH, "w") as file:
+                file.write(str(self.score))
+
+    def game_over2(self):
+        self.goto(0,0)
+        self.clear()
+        self.write("You eat the bad apple!", align="center", font=("Arial", 30, "normal"))
 
 
-
-
-
-def do_the_thing():
+def do_the_thing(board):
 
     #subprocess.Popen([RUTA, "--demo", "--no-vlc"])
     #subprocess.Popen([ "/home/jongar/Hello_python/venv/bin/bad-apple-turtle", "--download", "https://www.youtube.com/watch?v=c56TpxfO9q0","--no-vlc" ])
@@ -120,4 +134,7 @@ def do_the_thing():
     # "--video", "video.mp4",
     #    "--no-vlc"
     #])
-    pass
+    #subprocess.Popen(["../venv/bin/bad-apple-turtle", "--demo", "--no-vlc"])
+    subprocess.Popen([PATH_VIDEO, "--demo", "--no-vlc"])
+
+    board.game_over2()
