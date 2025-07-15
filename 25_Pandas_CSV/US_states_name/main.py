@@ -17,7 +17,7 @@ guessed_states=[]
 
 while corrects <= len(states):
     # print(states)
-    answer_state = turtle.textinput("State Game", prompt="Introduce a state").title()
+    answer_state = turtle.textinput(f"{corrects}/{len(states)} corrects", prompt="Introduce a state").title()
 
     if answer_state in states:
         x_pos= data.x[data.state == answer_state]
@@ -32,9 +32,18 @@ while corrects <= len(states):
             guessed_states.append(answer_state)
         else:
             print("You already guessed this state")
+    elif answer_state == "Exit":
+        missing_states=[]
+        for state in states:
+            if state not in guessed_states:
+                missing_states.append(state)
+        missing_states_df = pandas.DataFrame(missing_states)
+        missing_states_df.to_csv(PATH / "missing_states.csv")
+        break
+
     else:
         print("Sorry, you didn't guess this state")
 
 
 
-screen.exitonclick()
+screen.mainloop()
