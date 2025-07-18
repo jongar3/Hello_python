@@ -135,6 +135,6 @@ def do_the_thing(board):
     #    "--no-vlc"
     #])
     #subprocess.Popen(["../venv/bin/bad-apple-turtle", "--demo", "--no-vlc"])
-    subprocess.Popen([PATH_VIDEO, "--demo", "--no-vlc"])
+    subprocess.Popen([PATH_VIDEO, "--demo"])
 
     board.game_over2()
