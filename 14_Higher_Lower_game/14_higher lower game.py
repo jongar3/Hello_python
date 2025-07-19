@@ -1,6 +1,6 @@
 import random
 from game_data import logo, vs, data
-import os
+import os 
 def clear():
     os.system("cls" if os.name=="nt" else "clear")
 
@@ -19,12 +19,12 @@ def ask_win(option, d1, d2):
             return True
         else:
             return False
-    if option =='B':
+    elif option =='B':
         if d1["follower_count"]> d2["follower_count"]:
             return False
         else:
             return True
-
+    return None
 score=0
 def main(d1): 
     global score
@@ -48,7 +48,7 @@ def main(d1):
     else:
         clear()
         print(f"you loose! with a score of {score}")
-        if (input("Play again 'y' or 'n': ").lower()=='y'):
+        if ('y' == input("Play again 'y' or 'n': ").lower()):
             clear()
             main(None)
         else:

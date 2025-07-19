@@ -1,0 +1,60 @@
+{
+    "web example": {
+        "email": [
+            "example@gmail.com"
+        ],
+        "password": [
+            "password"
+        ]
+    },
+    "iofaei": {
+        "email": [
+            "example@gmail.com"
+        ],
+        "password": [
+            "coco"
+        ]
+    },
+    "Amazon": {
+        "email": [
+            "jongarcicuevas@gmail.com",
+            "irenegar@gmail.com"
+        ],
+        "password": [
+            "x02333ka(w",
+            "C5~Xw&p:uhT4WHeb"
+        ]
+    },
+    "reddit": {
+        "email": [
+            "example@gmail.com"
+        ],
+        "password": [
+            "123456"
+        ]
+    },
+    "Temu": {
+        "email": [
+            "example@gmail.com"
+        ],
+        "password": [
+            "5GwPqMtWa&XM-*=]"
+        ]
+    },
+    "Aliexpress": {
+        "email": [
+            "example@gmail.com"
+        ],
+        "password": [
+            "<J[=*J|U5@yT;"
+        ]
+    },
+    "youtube": {
+        "email": [
+            "jorgeangel@gmail.com"
+        ],
+        "password": [
+            "}QFyC:,afE4sMo"
+        ]
+    }
+}
