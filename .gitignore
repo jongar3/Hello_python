@@ -4,3 +4,4 @@ venv/
 20_21_snake_game/*.mp4
 24_paths_files/Output/ReadyToSend/*.txt
 37_habit_tracker/data.json
+*.env
