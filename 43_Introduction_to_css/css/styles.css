@@ -1,0 +1,30 @@
+
+  body {
+    background-color: #FAF7F3;
+  }
+
+  hr{
+    background-color: #DCC5B2;
+    border-style: none;
+    height: 3px;
+    width: 92%;
+  }
+  hr.dotted {
+    background-color: #FAF7F3;
+    border-style: dotted none none none; 
+    border-color: #DCC5B2;
+    border-width: 6px;
+    height: 0;
+    width: 15%;
+    margin: 30px auto; 
+  }
+
+    h1 {
+        color: #e2a399;
+    }
+    h3 {
+        color: #e2a399;
+    }
+    h2 {
+        color: #e2a399;
+    }
