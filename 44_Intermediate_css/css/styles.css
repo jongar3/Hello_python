@@ -1,0 +1,147 @@
+
+  body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* It is possible to use margin 0 auto 0 auto  to align the text to the center */
+    font-family: "Merriweather", serif;
+  
+  }
+
+  div.profile {
+    background-color: #FAF7F3;
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    }
+    
+  div.profile h1 {
+      margin: 30px auto 0 auto;
+      padding-top: 15px;
+ 
+  }
+  div.middle-container {
+    padding: 2rem 0;
+    margin-top: 2rem;
+  }
+  
+  .bottom-cloud {
+    position: absolute;
+    bottom: 420px;
+    left: 16%;
+  }
+  .top-cloud {
+    position: absolute;
+    right: 24%;
+    top: 40px;
+  }
+
+
+
+  hr{
+    
+    border-style: none;
+    height: 3px;
+    width: 92%;
+  }
+  hr.dotted {
+    
+    border-style: dotted none none none; 
+    border-color: #DCC5B2;
+    border-width: 6px;
+    height: 0;
+    width: 15%;
+    margin: 110px auto 95px auto; 
+    clear: both;
+  
+  }
+    h1 {
+        color: #e2a399;
+        font-family: "sacramento", cursive;
+        font-size: 6rem; /* =562.5% */
+
+    }
+    h3 {
+        color: #e2a399;
+        font-family: "montserrat", sans-serif;
+    }
+    h2 {
+        color: #e2a399;
+        font-family: "montserrat", sans-serif;
+        font-size: 2.5rem; /* =250% */ 
+        font-weight: normal;
+    }
+    div.bottom-container {
+        
+        background-color: #F0E4D3;
+        padding : 3px 0 0.7rem 0;
+        margin-top: 2rem;
+    }
+
+    a.button {
+        color: #DCC5B2;
+        font-family: "montserrat", sans-serif;
+        font-size: 1.5rem; /* =150% */
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 7px;
+        background-color: #FAF7F3;
+        margin: 2rem auto 1rem auto;
+        font-family: "montserrat", sans-serif;;
+    }
+    a.button:hover {
+        background-color: gold;
+        font-weight: bold;
+        
+    }
+
+    p.copyright {
+        color: grey;
+        font-family: "montserrat", sans-serif;
+        font-size: 1rem; /* =120% */
+        margin-top: 3rem;
+    }
+  .skills-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 1.8;
+  }
+
+#python-img {
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+    padding-top: 28px;
+    border-radius: 100%;
+}
+#poker-img {
+    width: 25%;
+    float: right; /* clear is the """antifloat""" */
+    margin-left: 20px;
+    padding-top: 28px;
+    border-radius: 100%;
+}
+.buttonClass {
+  font-size:15px;
+  font-family: "montserrat", sans-serif;
+  width:140px;
+  height:50px;
+  border-width:2px;
+  color:#505739;
+  border-color:#333029;
+  font-weight:bold;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  text-shadow: 0px 1px 0px #ffffff;
+  background:linear-gradient(#eae0c2, #ccc2a6);
+  margin: 1.3rem auto 0 auto;
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#ccc2a6, #eae0c2);
+}
