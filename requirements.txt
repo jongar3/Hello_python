@@ -1,10 +1,13 @@
 bad-apple-turtle==2.1.1b0
+beautifulsoup4==4.13.4
+bs4==0.0.2
 certifi==2025.8.3
 charset-normalizer==3.4.2
 colorgram.py==1.2.0
 dotenv==0.9.9
 heroes==1.0.2
 idna==3.10
+lxml==6.0.0
 numpy==2.2.6
 opencv-python==4.12.0.88
 pandas==2.3.1
@@ -17,6 +20,8 @@ python-vlc==3.0.21203
 pytz==2025.2
 requests==2.32.4
 six==1.17.0
+soupsieve==2.7
+typing_extensions==4.14.1
 tzdata==2025.2
 urllib3==2.5.0
 wcwidth==0.2.13
