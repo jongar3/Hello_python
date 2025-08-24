@@ -5,3 +5,4 @@ venv/
 24_paths_files/Output/ReadyToSend/*.txt
 37_habit_tracker/data.json
 *.env
+.cache/
