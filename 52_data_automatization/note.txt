@@ -1,0 +1,6 @@
+It is not possible to acces to zillow by either Selenium or Requests. 
+
+So I used a scrapping API. With update_html.py I get the html of zillow
+and the it gets processed by main.py. 
+
+I had to do it this way because I have limited calls.
