@@ -6,3 +6,4 @@ venv/
 37_habit_tracker/data.json
 *.env
 .cache/
+.vscode/
