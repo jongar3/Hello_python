@@ -125,16 +125,8 @@ class ScoreBoard(Turtle):
         self.write("You eat the bad apple!", align="center", font=("Arial", 30, "normal"))
 
 
+VIDEO_FILE = pathlib.Path(__file__).resolve().parent / "video.mp4"
+
 def do_the_thing(board):
-
-    #subprocess.Popen([RUTA, "--demo", "--no-vlc"])
-    #subprocess.Popen([ "/home/jongar/Hello_python/venv/bin/bad-apple-turtle", "--download", "https://www.youtube.com/watch?v=c56TpxfO9q0","--no-vlc" ])
-    #subprocess.Popen([
-    #  "/home/jongar/Hello_python/venv/bin/bad-apple-turtle",
-    # "--video", "video.mp4",
-    #    "--no-vlc"
-    #])
-    #subprocess.Popen(["../venv/bin/bad-apple-turtle", "--demo", "--no-vlc"])
-    subprocess.Popen([PATH_VIDEO, "--demo"])
-
+    subprocess.Popen([str(PATH_VIDEO), "--video", str(VIDEO_FILE), "--no-vlc"])
     board.game_over2()
